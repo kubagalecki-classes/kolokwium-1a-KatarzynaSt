@@ -5,29 +5,11 @@
 #include <type_traits>
 
 // tutaj klasa Penne
-Makaron()
-{
-public:
-virtual double ileMaki(unsigned int) const;
-
-static Makaron* gotujMakaron(const& string j)
-{
-  if (j.front()==j.back())
-  {
-    return new Tagiatelle(3.14,0.42,0.1);
-  }
-  else 
-  {
-    return new Penne();
-  }
-}
-};
-
 class Penne() : public Makaron
 {
 public:
 
-double ileMaki(unsigned int ilosc_maki)
+double ileMaki(unsigned ilosc_maki)
 {
 return ilosc_maki;
 }
@@ -39,10 +21,10 @@ return ilosc_maki;
 Makaron* Makaron::gotujMakaron(const string& j)
   if (j.front()==j.back())
   {
-    return new Tagiatelle(3.14,0.42,0.1);
+    return new Tagliatelle(3.14,0.42,0.1);
   }
   else 
   {
-    return new Penne();
+    return new Penne;
   }
 }

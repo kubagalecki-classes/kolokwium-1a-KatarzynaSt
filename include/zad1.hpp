@@ -1,15 +1,17 @@
 #include "catch.hpp"
-
+#include <string>
 // Zad2
 // tutaj definicja klasy Makaron
 class Makaron
 {
 public:
-virtual double ileMaki(unsigned int) const;
+virtual double ileMaki(unsigned) const =0;
+
+// BEZ definicji metody gotujMakaron (tylko z deklaracją)
 
 static Makaron* gotujMakaron(const string& j);
+
 };
-// BEZ definicji metody gotujMakaron (tylko z deklaracją)
 
 // Zad1
 // tutaj definicja klasy Tagliatelle
@@ -18,13 +20,13 @@ class Tagliatelle : public Makaron
 {
   public:
 
-Tagliatelle(double l, double w, double r):L(l),W(w),R(r){};
+Tagliatelle(double l, double w, double r):L(l),W(w),R(r) {}
 
 Tagliatelle()
 {
-  L=-0.5;
-  W=-0.5;
-  R=-0.5;
+  L=0.5;
+  W=0.5;
+  R=0.5;
 };
 
 double ileMaki(unsigned P) const
