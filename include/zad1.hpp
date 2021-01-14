@@ -9,8 +9,7 @@ virtual double ileMaki(unsigned) const =0;
 
 // BEZ definicji metody gotujMakaron (tylko z deklaracją)
 
-static Makaron* gotujMakaron(const string& j);
-
+static Makaron* gotujMakaron(const std::string&);
 };
 
 // Zad1

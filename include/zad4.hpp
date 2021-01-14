@@ -3,9 +3,9 @@
 #include <vector>
 
 // tutaj funkcja obliczMake
-double obliczMake(const& vector<Tagliatelle> makarony)
+double obliczMake(const vector<Tagliatelle>& makarony)
 {
-  double M;
+  double M=0;
   for (int i=0; i < makarony.size(); i++)
   {
   double maka_z_danego=(makarony.size() - i)*makarony[i]->ileMaki();
