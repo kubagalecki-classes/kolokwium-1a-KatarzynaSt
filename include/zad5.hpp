@@ -8,8 +8,12 @@
 
 // tutaj funkcja sortujTagliatelle
 template<typename T1>
-sortujTagliatelle()
+sortujTagliatelle(T1 temp1, T1 temp2)
 {
-T1 temp1;
-T1 temp2;
+std::vector<Tagliatelle> wek;
+
+temp1=wek.beign();
+temp2=wek.end();
+
+return sort(temp1, temp2, wek->iloscMaki());
 }
