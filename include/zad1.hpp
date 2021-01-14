@@ -5,7 +5,7 @@
 class Makaron
 {
 public:
-virtual double ileMaki(unsigned) const =0;
+virtual double ileMaki(unsigned) const;
 
 // BEZ definicji metody gotujMakaron (tylko z deklaracją)
 
