@@ -11,7 +11,7 @@ double obliczMake(const vector<Tagliatelle>& makarony)
   double maka_z_danego=(makarony.size() - i)*makarony[i]->ileMaki();
     M=M+maka_z_danego;
   }
-  if (M>100)
+   if (M>100)
   {
     return int f=25;
   }
