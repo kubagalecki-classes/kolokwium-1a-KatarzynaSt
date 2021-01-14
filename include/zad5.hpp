@@ -7,3 +7,4 @@
 #include <vector>
 
 // tutaj funkcja sortujTagliatelle
+sortujTagliatelle
